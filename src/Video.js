@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import "./Video.css";
-import vid from "./video/video2.mp4";
+import vid from "./video/video1.mp4";
 
 const Video = () => {
     const [playing,setPlaying] = useState(false);
@@ -19,6 +19,7 @@ const Video = () => {
         <div className="video">
             <video ref={videoRef}
             onClick={handleVideoPress}
+            height="550px"
             className="video_player" loop
                src={vid} alt="video"></video>
             
